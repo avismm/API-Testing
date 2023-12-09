@@ -7,7 +7,7 @@ public class APIPayloads {
 
     public static String generateTokenPayload(){
       String generateToken =  "{\n" +
-              "  \"email\": \"avis@batch17.com\",\n" +
+              "  \"email\": \"avism@batch17.com\",\n" +
               "  \"password\": \"Test@123\"\n" +
               "}";
       return generateToken;

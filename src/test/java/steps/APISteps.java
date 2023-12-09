@@ -10,14 +10,15 @@ import utils.APIConstants;
 import utils.APIPayloads;
 
 import static io.restassured.RestAssured.given;
+import static steps.tokenReader.token;
 
 public class APISteps {
-    String token;
+    //String token;
     RequestSpecification request;
     Response response;
     String employee_id;
 
-    @Given("a JWT is generated")
+ /*   @Given("a JWT is generated")
     public void a_jwt_is_generated() {
         RequestSpecification request = given().
                 header(APIConstants.HEADER_CONTENT_TYPE_KEY,APIConstants.CONTENT_TYPE_VALUE).
@@ -27,7 +28,7 @@ public class APISteps {
         //storing the token after generating it
         token = "Bearer "+ response.jsonPath().getString("token");
         System.out.println(token);
-    }
+    }*/
 
     @Given("a request is prepared to create an Employee")
     public void a_request_is_prepared_to_create_an_employee() {
